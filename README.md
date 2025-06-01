@@ -1,6 +1,6 @@
 <p align="center">
     <a href="#">
-        <img src="/Resources/ReadmeBanner.png">
+        <img src="https://raw.githubusercontent.com/MegaPunkGames/MegaBoidsDemo/refs/heads/master/Resources/ReadmeBanner.PNG">
     </a>
 </p>
 
