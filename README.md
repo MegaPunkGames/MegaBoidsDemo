@@ -5,12 +5,11 @@
 </p>
 
 # Contents
-[About](#About)
-[Features](#Features)
-[Changelog](#Changelog)
-[Requirements](#Requirements)
-[Installation](#Installation)
-[Acknowledgements](#Acknowledgements)
+- [About](#About)
+- [Features](#Features)
+- [Changelog](#Changelog)
+- [Installation](#Installation)
+- [Acknowledgements](#Acknowledgements)
 
 Be sure to check out the [Wiki](https://github.com/MegaPunkGames/MegaBoidsDemo/wiki) for documentation and technical reference.
 
@@ -18,7 +17,7 @@ Be sure to check out the [Wiki](https://github.com/MegaPunkGames/MegaBoidsDemo/w
 
 # Features
 - $\color{green}{Mass Entity}$: Based on Mass Entity for maximum performance.
-- $\color{green}{Multi threaded}$: Fully multi threaded to make the most use of those CPU cores and limit the impact on the game thread.
+- $\color{green}{Multi~threaded}$: Fully multi threaded to make the most use of those CPU cores and limit the impact on the game thread.
 - $\color{green}{Movement models}$: Extensive set of common movement models (Ground, gliding, kinetic particle & rigid bodies, etc.).
 - $\color{green}{Driving forces}$: Extensive set of common force sources to drive the boid movement (Impulse, burst, follow path, flee, etc.).
 - $\color{green}{Environment forces}$: Add forces to your environment to simulate water or air currents for more dynamic and rich movement.
