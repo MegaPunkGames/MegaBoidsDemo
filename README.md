@@ -1,24 +1,24 @@
 <p align="center">
     <a href="#">
-        <img src="/Resources/Icon256.png">
+        <img src="/Resources/ReadmeBanner.png">
     </a>
 </p>
 
 # Contents
-[About](#About)
-[Features](#Features)
-[Changelog](#Changelog)
-[Requirements](#Requirements)
-[Installation](#Installation)
-[Acknowledgements](#Acknowledgements)
+- [About](#About)
+- [Features](#Features)
+- [Changelog](#Changelog)
+- [Installation](#Installation)
+- [Acknowledgements](#Acknowledgements)
 
 Be sure to check out the [Wiki](https://github.com/MegaPunkGames/MegaBoidsDemo/wiki) for documentation and technical reference.
 
 # About
+MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich behavior. Built upon the common boid algorithm with alignment, cohesion and separation, MegaBoids makes it easy to create atmosphere within your environment by adding thousands of entities with small CPU and GPU overhead. Whether it's flocks of birds, swarms of insects, schools of fish or your custom groups of aliens, this plugin has it covered with it's extensive feature set and support for custom behavior injection.
 
 # Features
 - $\color{green}{Mass Entity}$: Based on Mass Entity for maximum performance.
-- $\color{green}{Multi threaded}$: Fully multi threaded to make the most use of those CPU cores and limit the impact on the game thread.
+- $\color{green}{Multi~threaded}$: Fully multi threaded to make the most use of those CPU cores and limit the impact on the game thread.
 - $\color{green}{Movement models}$: Extensive set of common movement models (Ground, gliding, kinetic particle & rigid bodies, etc.).
 - $\color{green}{Driving forces}$: Extensive set of common force sources to drive the boid movement (Impulse, burst, follow path, flee, etc.).
 - $\color{green}{Environment forces}$: Add forces to your environment to simulate water or air currents for more dynamic and rich movement.
@@ -45,5 +45,5 @@ Be sure to check out the [Wiki](https://github.com/MegaPunkGames/MegaBoidsDemo/w
 # Acknowledgements
 Special thanks to:
 - Lancaster Modelagem for the blue butterfly model and animation (https://sketchfab.com/3d-models/borboleta-azul-butterfly-ab9192b6bc8f49e3baed63e984c7073a), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-- huykhoi2407 for the carp https://sketchfab.com/3d-models/carp-fish-ef0c406d4ca84242a0464abecb7d7037fish model (https://sketchfab.com/3d-models/carp-fish-ef0c406d4ca84242a0464abecb7d7037), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+- huykhoi2407 for the carp fish model (https://sketchfab.com/3d-models/carp-fish-ef0c406d4ca84242a0464abecb7d7037), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 - kromond for the AnimToTextureHelpers (https://github.com/kromond/AnimToTextureHelpers)
