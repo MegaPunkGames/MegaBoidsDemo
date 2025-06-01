@@ -1,6 +1,6 @@
 <p align="center">
     <a href="#">
-        <img src="/Resources/Icon256.png">
+        <img src="/Resources/ReadmeBanner.png">
     </a>
 </p>
 
