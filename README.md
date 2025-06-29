@@ -33,13 +33,13 @@ MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich beh
 
 # Changelog
 
-## Version 1.0.0a
+## Version 0.1
  - First ALPHA release
 
 # Installation
 - Purchase and download the plugin from Fab
 - Extract zip file into your project's Plugins folder
-- Regenerate your C++ project files
+- Regenerate your C++ project files for the target UE version
 - Compile and enjoy!
 
 # Acknowledgements
