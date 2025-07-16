@@ -49,3 +49,5 @@ Special thanks to:
 - Lancaster Modelagem for the blue butterfly model and animation (https://sketchfab.com/3d-models/borboleta-azul-butterfly-ab9192b6bc8f49e3baed63e984c7073a), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 - huykhoi2407 for the carp fish model (https://sketchfab.com/3d-models/carp-fish-ef0c406d4ca84242a0464abecb7d7037), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 - kromond for the AnimToTextureHelpers (https://github.com/kromond/AnimToTextureHelpers)
+
+<sub>Documentation and demo last updated for version 0.1.1</sub>
