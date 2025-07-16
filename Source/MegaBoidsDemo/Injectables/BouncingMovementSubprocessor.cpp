@@ -1,4 +1,4 @@
-﻿// Copyright 2023-2025 - MegaPunk Games
+﻿// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
 
 #include "BouncingMovementSubprocessor.h"
 
@@ -84,7 +84,7 @@ void UBouncingMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMove
 			FBouncingAnimationFragment& AnimFragment = Context.GetMutableFragment<FBouncingAnimationFragment>();
 			AnimFragment.AnimStartTime = Context.GetWorld()->GetTimeSeconds();
 
-			if (!Context.DoesArchetypeHaveTag<FMegaBoidsUpdateShaderCustomDataTagFragment>())
+			if (!Context.HasTag<FMegaBoidsUpdateShaderCustomDataTagFragment>())
 			{
 				Context.Defer().AddTag<FMegaBoidsUpdateShaderCustomDataTagFragment>(Context.GetEntity());
 			}
