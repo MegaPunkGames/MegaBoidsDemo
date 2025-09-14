@@ -41,7 +41,7 @@ MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich beh
  - Added Flee driving subprocessor
  - Reworked Follower driving subprocessor
  - Fix crash when reordering driving subprocessors in list
-## Version 0.1.1
+## Version 0.1.2
  - Added Wander driving subprocessor
  - Grouped all propulsion driving subprocessors into a master Propulsion
  - Merged Kinematic/Kinetic particle movements into Simple Particle movement
@@ -58,4 +58,4 @@ Special thanks to:
 - huykhoi2407 for the carp fish model (https://sketchfab.com/3d-models/carp-fish-ef0c406d4ca84242a0464abecb7d7037), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 - kromond for the AnimToTextureHelpers (https://github.com/kromond/AnimToTextureHelpers)
 
-<sub>Documentation and demo last updated for version 0.1.1</sub>
+<sub>Documentation and demo last updated for version 0.1.2</sub>
