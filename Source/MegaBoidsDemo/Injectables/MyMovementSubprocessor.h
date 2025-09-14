@@ -1,4 +1,4 @@
-﻿// Copyright 2023-2025 - MegaPunk Games
+﻿// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
 
 #pragma once
 
@@ -23,7 +23,7 @@ class UMyMovementSubprocessorDefinition
 {
 public:
 	static void SetupQuery(FMassEntityQuery& Query) { }
-	static void SetupTrait(FMegaBoidsBuildContext& BuildContext, const UMegaBoidsMovementSubprocessorConfig* Config) { }
+	static void SetupTrait(FMegaBoidsMovementBuildContext& BuildContext, const UMegaBoidsMovementSubprocessorConfig* Config) { }
 	static void InitializeEntity(const FMegaBoidsMovementInitializationContext& Context) { }
 
 	static void ApplyMovement(const FMegaBoidsMovementExecutionContext& Context, const FMegaBoidsMovementData& BoidFragment, const FVector& PropulsionForce, const FVector& SteeringForce, const FVector& AvoidanceForce, float DeltaTime);

@@ -1,4 +1,4 @@
-﻿// Copyright 2023-2025 - MegaPunk Games
+﻿// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
 
 
 #include "MyMovementSubprocessor.h"

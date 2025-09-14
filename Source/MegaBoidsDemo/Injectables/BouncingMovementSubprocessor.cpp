@@ -1,4 +1,4 @@
-﻿// Copyright 2023-2025 - MegaPunk Games
+﻿// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
 
 #include "BouncingMovementSubprocessor.h"
 
@@ -14,13 +14,13 @@ void UBouncingMovementSubprocessorDefinition::SetupQuery(FMassEntityQuery& Query
 	Query.AddConstSharedRequirement<FBouncingMovementSharedFragment>();
 }
 
-void UBouncingMovementSubprocessorDefinition::SetupTrait(FMegaBoidsBuildContext& BuildContext, const UMegaBoidsMovementSubprocessorConfig* Config)
+void UBouncingMovementSubprocessorDefinition::SetupTrait(FMegaBoidsMovementBuildContext& BuildContext, const UMegaBoidsMovementSubprocessorConfig* Config)
 {
 	const UBouncingMovementConfig* BounceConfig = Cast<const UBouncingMovementConfig>(Config);
 
 	BuildContext.AddFragment<FBouncingMovementFragment>();
 
-	FBouncingMovementSharedFragment& BounceSharedFragment = BuildContext.AddConstSharedFragment<FBouncingMovementSharedFragment>();
+	FBouncingMovementSharedFragment& BounceSharedFragment = BuildContext.AddConstSharedFragment_GetRef<FBouncingMovementSharedFragment>();
 	BounceSharedFragment.BounceStrength = BounceConfig->BounceStrength;
 	BounceSharedFragment.Gravity = BounceConfig->Gravity;
 	BounceSharedFragment.BounceAnimDelay = BounceConfig->BounceAnimDelay;
@@ -84,7 +84,7 @@ void UBouncingMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMove
 			FBouncingAnimationFragment& AnimFragment = Context.GetMutableFragment<FBouncingAnimationFragment>();
 			AnimFragment.AnimStartTime = Context.GetWorld()->GetTimeSeconds();
 
-			if (!Context.DoesArchetypeHaveTag<FMegaBoidsUpdateShaderCustomDataTagFragment>())
+			if (!Context.HasTag<FMegaBoidsUpdateShaderCustomDataTagFragment>())
 			{
 				Context.Defer().AddTag<FMegaBoidsUpdateShaderCustomDataTagFragment>(Context.GetEntity());
 			}
