@@ -41,7 +41,11 @@ MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich beh
  - Added Flee driving subprocessor
  - Reworked Follower driving subprocessor
  - Fix crash when reordering driving subprocessors in list
-
+## Version 0.1.1
+ - Added Wander driving subprocessor
+ - Grouped all propulsion driving subprocessors into a master Propulsion
+ - Merged Kinematic/Kinetic particle movements into Simple Particle movement
+   
 # Installation
 - Purchase and download the plugin from [Fab](https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325)
 - Extract zip file into your project's Plugins folder
