@@ -45,6 +45,8 @@ MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich beh
  - Added Wander driving subprocessor
  - Grouped all propulsion driving subprocessors into a master Propulsion
  - Merged Kinematic/Kinetic particle movements into Simple Particle movement
+## Version 0.2.0
+ - Added Mass Actor representation
    
 # Installation
 - Purchase and download the plugin from [Fab](https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325)
