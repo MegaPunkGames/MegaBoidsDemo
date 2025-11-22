@@ -54,6 +54,9 @@ public:
 	static bool IsGroupSpacePartitionDrawEnabled(const int32 GroupId);
 
 	UFUNCTION(BlueprintPure, Category="MegaBoids|Utils", meta=(DevelopmentOnly))
+	static int32 GetGroupSpacePartitionDrawLevel(const int32 GroupId);
+
+	UFUNCTION(BlueprintPure, Category="MegaBoids|Utils", meta=(DevelopmentOnly))
 	static bool IsGroupSteeringForcesDrawEnabled(const int32 GroupId);
 
 	UFUNCTION(BlueprintPure, Category="MegaBoids|Utils", meta=(DevelopmentOnly))

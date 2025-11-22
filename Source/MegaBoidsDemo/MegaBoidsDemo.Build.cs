@@ -15,8 +15,11 @@ namespace UnrealBuildTool.Rules
 					"Engine",
 					"StructUtils",
 					"DeveloperSettings",
+					"MassCommon",
 					"MassEntity",
 					"MassSpawner",
+					"MegaCompat",
+					"MegaBoids",
 				}
 			);
 
@@ -25,8 +28,6 @@ namespace UnrealBuildTool.Rules
 				PrivateDependencyModuleNames.AddRange(
 					new string[] {
 						"UnrealEd",
-						"MegaCompat",
-						"MegaBoids",
 						"MegaBoidsEditor"
 					}
 				);

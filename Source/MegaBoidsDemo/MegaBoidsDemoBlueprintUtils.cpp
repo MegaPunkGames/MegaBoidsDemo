@@ -117,6 +117,15 @@ bool UMegaBoidsDemoBlueprintUtils::IsGroupSpacePartitionDrawEnabled(const int32 
 #endif
 }
 
+int32 UMegaBoidsDemoBlueprintUtils::GetGroupSpacePartitionDrawLevel(const int32 GroupId)
+{
+#if WITH_EDITOR
+    return GetDebugSubsystemSafe()->GetGroupSpacePartitionDrawLevel(GroupId);
+#else
+    return 0;
+#endif
+}
+
 bool UMegaBoidsDemoBlueprintUtils::IsGroupSteeringForcesDrawEnabled(const int32 GroupId)
 {
 #if WITH_EDITOR

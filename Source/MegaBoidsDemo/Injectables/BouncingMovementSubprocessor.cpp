@@ -3,8 +3,7 @@
 #include "BouncingMovementSubprocessor.h"
 
 #include "MegaBoidsContext.h"
-#include "MegaCompatHelpers.h"
-#include "Fragments/MegaBoidsFragment.h"
+#include "Fragments/MegaBoidsCommonFragments.h"
 #include "Fragments/MegaBoidsUpdateShaderCustomDataTagFragment.h"
 
 void UBouncingMovementSubprocessorDefinition::SetupQuery(FMassEntityQuery& Query)
@@ -29,14 +28,14 @@ void UBouncingMovementSubprocessorDefinition::SetupTrait(FMegaBoidsMovementBuild
 void UBouncingMovementSubprocessorDefinition::InitializeEntity(const FMegaBoidsMovementInitializationContext& Context)
 {
 	const FBouncingMovementSharedFragment& BounceSharedFragment = Context.GetConstSharedFragment<FBouncingMovementSharedFragment>();
-	FBouncingMovementFragment&BounceFragment = Context.GetFragment<FBouncingMovementFragment>();
-	FMegaBoidsFragment& BoidFragment = Context.GetFragment<FMegaBoidsFragment>();
+	FBouncingMovementFragment& BounceFragment = Context.GetFragment<FBouncingMovementFragment>();
+	FMegaBoidsTransformFragment& TransformFragment = Context.GetFragment<FMegaBoidsTransformFragment>();
 
 	BounceFragment.VerticalVelocity = FMath::RandRange(-BounceSharedFragment.BounceStrength, BounceSharedFragment.BounceStrength); // Start with a random velocity.
 
-	FVector SpawnLocation = BoidFragment.Transform.GetLocation();
+	FVector SpawnLocation = TransformFragment.GetMutableTransform().GetLocation();
 	SpawnLocation.Z = (FMath::Square(BounceFragment.VerticalVelocity) - FMath::Square(BounceSharedFragment.BounceStrength)) / (-2 * BounceSharedFragment.Gravity); // Compute Z height from initialized random velocity
-	BoidFragment.Transform.SetTranslation(SpawnLocation);
+	TransformFragment.GetMutableTransform().SetTranslation(SpawnLocation);
 
 	// Compute animation start time from initialized velocity. Animation is 1 second long...
 	FBouncingAnimationFragment* AnimFragment = Context.GetFragmentPtr<FBouncingAnimationFragment>();

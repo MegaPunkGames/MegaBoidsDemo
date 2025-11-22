@@ -11,7 +11,6 @@ struct FMegaBoidsMovementExecutionContext;
 struct FMegaBoidsAvoidanceFragment;
 struct FMegaBoidsSteeringFragment;
 struct FMegaBoidsDrivingFragment;
-struct FMegaBoidsFragment;
 
 UCLASS(BlueprintType, meta = (DisplayName = "My Custom Movement"))
 class UMyMovementConfig : public UMegaBoidsMovementSubprocessorConfig
