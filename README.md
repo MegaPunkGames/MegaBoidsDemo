@@ -60,4 +60,4 @@ Special thanks to:
 - huykhoi2407 for the carp fish model (https://sketchfab.com/3d-models/carp-fish-ef0c406d4ca84242a0464abecb7d7037), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 - kromond for the AnimToTextureHelpers (https://github.com/kromond/AnimToTextureHelpers)
 
-<sub>Documentation and demo last updated for version 0.1.2</sub>
+<sub>Documentation and demo last updated for version 0.3.0</sub>
