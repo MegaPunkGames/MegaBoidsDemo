@@ -47,7 +47,10 @@ MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich beh
  - Merged Kinematic/Kinetic particle movements into Simple Particle movement
 ## Version 0.2.0
  - Added Mass Actor representation
-   
+## Version 0.3.0
+ - Added Spatial hash space partition
+ - Added boid size criteria to follow/flee driving subprocessors
+ 
 # Installation
 - Purchase and download the plugin from [Fab](https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325)
 - Extract zip file into your project's Plugins folder
