@@ -6,12 +6,12 @@
 
 The MegaBoids plugin is [available on Fab!](https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325)
 
-# Contents
-- [About](#About)
-- [Features](#Features)
-- [Changelog](#Changelog)
-- [Installation](#Installation)
-- [Acknowledgements](#Acknowledgements)
+> # Contents
+> 1. [About](#About)
+> 1. [Features](#Features)
+> 1. [Changelog](#Changelog)
+> 1. [Installation](#Installation)
+> 1. [Acknowledgements](#Acknowledgements)
 
 Be sure to check out the [Wiki](https://github.com/MegaPunkGames/MegaBoidsDemo/wiki) for documentation and technical reference.
 
@@ -50,7 +50,12 @@ MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich beh
 ## Version 0.3.0
  - Added Spatial hash space partition
  - Added boid size criteria to follow/flee driving subprocessors
- 
+## Version 0.3.1
+ - Added Spatial hash LitMin/BigMax search algorithm
+ - Added project settings
+ - Added default boid config space partition
+ - Added per spawner & spawn config space partition override
+
 # Installation
 - Purchase and download the plugin from [Fab](https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325)
 - Extract zip file into your project's Plugins folder
