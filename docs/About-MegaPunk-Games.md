@@ -1,6 +1,7 @@
 ---
 title: About MegaPunk Games
 layout: about
+nav_order: 3
 ---
 
 ![Banner](resources/Banner.png)

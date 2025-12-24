@@ -1,6 +1,7 @@
 ---
 title: Documentation
 layout: page
+nav_order: 2
 ---
 
 # Plugin documentation

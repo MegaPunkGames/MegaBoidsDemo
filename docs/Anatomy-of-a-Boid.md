@@ -1,27 +1,32 @@
 ---
 title: Anatomy of a Boid
 layout: page
+parent: Basic Concepts
+nav_order: 1
+back_to_top: true
+back_to_top_text: "Back to top"
 ---
 
-<!--TOC-->
-> # Contents:
-> 1. [Boid configuration](#boid-configuration)
-> 1. [Initialization](#initialization)
-> 1. [Movement](#movement)
->     1. [Movement components](#movement-components)
->     1. [Steering](#steering)
->         1. [Avoidance](#avoidance)
->     1. [Driving subprocessors](#driving-subprocessors)
->         1. [Propulsion](#propulsion)
->     1. [Environmental](#environmental)
->   1. [The Movement Model](#the-movement-model)
-> 1. [Representation](#representation)
->    1. [HISM Representation](#hism-representation)
->       1. [Per-instance custom data](#per-instance-custom-data)
->       1. [Animation](#animation)
->   1. [Actors (Mass Visualization)](#actors-mass-visualization)
->   1. [Ghost boids](#ghost-boids)
-<!--/TOC-->
+<style>
+table th:nth-of-type(1) {
+    width: 100px;
+}
+table th:nth-of-type(2) {
+    width: 600px;
+}
+table th:nth-of-type(3) {
+    width: 150px;
+}
+</style>
+
+<details open markdown="block">
+  <summary>
+    Contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 
 # Boid configuration

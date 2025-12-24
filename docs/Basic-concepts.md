@@ -1,6 +1,8 @@
 ---
 title: Basic Concepts
 layout: page
+parent: Documentation
+nav_order: 1
 ---
 
 # Boids

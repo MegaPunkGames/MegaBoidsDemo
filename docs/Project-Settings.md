@@ -1,6 +1,10 @@
 ---
 title: Project Settings
 layout: page
+parent: Basic Concepts
+nav_order: 6
+back_to_top: true
+back_to_top_text: "Back to top"
 ---
 
 <style>

@@ -1,6 +1,7 @@
 ---
 title: Footer
 layout: default
+nav_exclude: true
 ---
 
 <sub>All content copyrighted to MegaPunk Games Inc. ©️ 2025</sub>

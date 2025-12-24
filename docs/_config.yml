@@ -1,4 +1,4 @@
-title: MegaBoids Documentation
+title: MegaBoids
 description: Documentation for the MegaBoids Unreal plugin
 theme: just-the-docs
 
@@ -97,7 +97,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  Get megaBoids on Fab: https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325
+  Get MegaBoids on Fab: https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false

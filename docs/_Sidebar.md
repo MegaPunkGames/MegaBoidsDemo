@@ -1,6 +1,7 @@
 ---
 title: Sidebar
 layout: default
+nav_exclude: true
 ---
 
 * [Home](Home)

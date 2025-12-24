@@ -1,6 +1,10 @@
 ---
 title: Spawners and Groups
 layout: page
+parent: Basic Concepts
+nav_order: 5
+back_to_top: true
+back_to_top_text: "Back to top"
 ---
 
 <style>
@@ -15,14 +19,14 @@ table th:nth-of-type(3) {
 }
 </style>
 
-<!--TOC-->
-> # Contents:
-> 1. [Spawners](#spawners)
-> 1. [Groups](#groups)
-> 1. [Group Composition](#group-composition)
-> 1. [Space partition](#space-partition)
->     1. [Space partition settings chain](#space-partition-settings-chain)
-<!--/TOC-->
+<details open markdown="block">
+  <summary>
+    Contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 # Spawners
 In the previous pages, we explained the different elements that come together to create movement in a boid. Multiple times, we mentioned the fact that some boid properties do not belong in the [boid configuration data asset](Anatomy-of-a-boid). Most of the time it is because the boid needs some reference to a level actor or we want them to have environment specific behavior. To do so, we can specialize our boid configuration from inside the level, through it's spawner.

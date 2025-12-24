@@ -8,7 +8,7 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
     paths:
       - "docs/**"
 
@@ -64,7 +64,7 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4
         with:
-          path: docs/_site/
+          path: docs/_site/MegaBoids
 
   # Deployment job
   deploy:

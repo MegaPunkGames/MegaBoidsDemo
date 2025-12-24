@@ -1,6 +1,8 @@
 ---
 title: Quick Start
 layout: page
+parent: Documentation
+nav_order: 1
 ---
 
 # Installation

@@ -1,6 +1,10 @@
 ---
 title: Environment forces
 layout: page
+parent: Basic Concepts
+nav_order: 3
+back_to_top: true
+back_to_top_text: "Back to top"
 ---
 
 <style>
@@ -14,6 +18,15 @@ table th:nth-of-type(3) {
     width: 150px;
 }
 </style>
+
+<details open markdown="block">
+  <summary>
+    Contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 # Environment subprocessors
 
