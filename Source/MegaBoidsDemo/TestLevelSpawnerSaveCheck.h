@@ -1,4 +1,4 @@
-﻿// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
+﻿// Copyright 2023-2026 - MegaPunk Games Inc. - All Rights Reserved
 
 #pragma once
 
@@ -9,10 +9,10 @@
 UCLASS()
 class MEGABOIDSDEMO_API ATestLevelSpawnerSaveCheck : public AActor
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
-	ATestLevelSpawnerSaveCheck();
+    ATestLevelSpawnerSaveCheck();
 
-	virtual void PreSave(FObjectPreSaveContext SaveContext) override;
+    virtual void PreSave(FObjectPreSaveContext SaveContext) override;
 };

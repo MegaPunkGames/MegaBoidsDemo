@@ -1,4 +1,4 @@
-// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
+// Copyright 2023-2026 - MegaPunk Games Inc. - All Rights Reserved
 
 using UnrealBuildTool;
 

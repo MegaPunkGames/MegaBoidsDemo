@@ -2,18 +2,18 @@
 
 namespace UnrealBuildTool.Rules
 {
-	public class MegaBoidsDemoEditor : ModuleRules
-	{
-		public MegaBoidsDemoEditor(ReadOnlyTargetRules Target) : base(Target)
-		{
-			PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+    public class MegaBoidsDemoEditor : ModuleRules
+    {
+        public MegaBoidsDemoEditor(ReadOnlyTargetRules Target) : base(Target)
+        {
+            PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
-			PublicDependencyModuleNames.AddRange(
-				new string[] {
-					"MegaBoidsDemo",
-					"MegaBoidsEditor"
-				}
-			);
-		}
-	}
+            PublicDependencyModuleNames.AddRange(
+                new string[] {
+                    "MegaBoidsDemo",
+                    "MegaBoidsEditor"
+                }
+            );
+        }
+    }
 }

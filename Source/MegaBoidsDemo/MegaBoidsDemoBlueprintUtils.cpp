@@ -1,4 +1,4 @@
-﻿// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
+﻿// Copyright 2023-2026 - MegaPunk Games Inc. - All Rights Reserved
 
 
 #include "MegaBoidsDemoBlueprintUtils.h"
@@ -21,7 +21,7 @@ bool UMegaBoidsDemoBlueprintUtils::IsStatFPSEnabled()
 bool UMegaBoidsDemoBlueprintUtils::DrawGroupLabels()
 {
 #if WITH_EDITOR
-	return GetDebugSubsystemSafe()->DrawGroupLabels();
+    return GetDebugSubsystemSafe()->DrawGroupLabels();
 #else
     return false;
 #endif
@@ -156,6 +156,6 @@ bool UMegaBoidsDemoBlueprintUtils::IsGroupMovementForcesDrawEnabled(const int32 
 #if WITH_EDITOR
 UMegaBoidsEditorDebugSubsystem* UMegaBoidsDemoBlueprintUtils::GetDebugSubsystemSafe()
 {
-	return GEditor->GetEditorSubsystem<UMegaBoidsEditorDebugSubsystem>();
+    return GEditor->GetEditorSubsystem<UMegaBoidsEditorDebugSubsystem>();
 }
 #endif

@@ -1,4 +1,4 @@
-﻿// Copyright 2023-2025 - MegaPunk Games Inc. - All Rights Reserved
+﻿// Copyright 2023-2026 - MegaPunk Games Inc. - All Rights Reserved
 
 
 #include "TestLevelSpawnerSaveCheck.h"
@@ -9,21 +9,21 @@
 
 ATestLevelSpawnerSaveCheck::ATestLevelSpawnerSaveCheck()
 {
-	bIsEditorOnlyActor = true;
+    bIsEditorOnlyActor = true;
 }
 
 void ATestLevelSpawnerSaveCheck::PreSave(FObjectPreSaveContext SaveContext)
 {
-	Super::PreSave(SaveContext);
+    Super::PreSave(SaveContext);
 
-	for (FActorIterator It(GetWorld()); It; ++It)
-	{
-		AMegaBoidsSpawner* Spawner = Cast<AMegaBoidsSpawner>(*It);
+    for (FActorIterator It(GetWorld()); It; ++It)
+    {
+        AMegaBoidsSpawner* Spawner = Cast<AMegaBoidsSpawner>(*It);
 
-		if (IsValid(Spawner))
-		{
-			Spawner->EnableSpawnOnBeginPlay(false);
-		}
-	}
+        if (IsValid(Spawner))
+        {
+            Spawner->EnableSpawnOnBeginPlay(false);
+        }
+    }
 }
 
