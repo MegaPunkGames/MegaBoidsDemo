@@ -13,7 +13,7 @@ The MegaBoids plugin is [available on Fab!](https://www.fab.com/listings/b6add01
 > 1. [Installation](#Installation)
 > 1. [Acknowledgements](#Acknowledgements)
 
-Be sure to check out the [Wiki](https://github.com/MegaPunkGames/MegaBoidsDemo/wiki) for documentation and technical reference.
+Be sure to check out the [documentation]([https://github.com/MegaPunkGames/MegaBoidsDemo/wiki](https://megapunkgames.com/MegaBoids/)) for all the details and technical reference.
 
 # About
 MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich behavior. Built upon the common boid algorithm with alignment, cohesion and separation, MegaBoids makes it easy to create atmosphere within your environment by adding thousands of entities with small CPU and GPU overhead. Whether it's flocks of birds, swarms of insects, schools of fish or your custom groups of aliens, this plugin has it covered with it's extensive feature set and support for custom behavior injection.
@@ -68,4 +68,4 @@ Special thanks to:
 - huykhoi2407 for the carp fish model (https://sketchfab.com/3d-models/carp-fish-ef0c406d4ca84242a0464abecb7d7037), licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 - kromond for the AnimToTextureHelpers (https://github.com/kromond/AnimToTextureHelpers)
 
-<sub>Documentation and demo last updated for version 0.3.0</sub>
+<sub>Documentation and demo last updated for version 0.3.1</sub>
