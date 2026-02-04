@@ -3,7 +3,7 @@
 
 #include "MyMovementSubprocessor.h"
 
-void UMyMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMovementExecutionContext& Context, const FMegaBoidsMovementData& BoidFragment, const FVector& PropulsionForce, const FVector& SteeringForce, const FVector& AvoidanceForce, float DeltaTime)
+void UMyMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMovementExecutionContext& Context, const FMegaBoidsMovementData& BoidFragment, const FVector& PropulsionForce, const FVector& SteeringForce, const FVector& AvoidanceForce)
 {
     // Just use driving force (ignore steering), this is just a proof of concept. Check BouncingBallMovementSubprocessorDefinition for a better example.
     if (!PropulsionForce.IsNearlyZero())
@@ -16,7 +16,7 @@ void UMyMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMovementEx
         const FVector NewRightVector = NewUpVector.Cross(MovementDirection).GetSafeNormal();
         const FQuat UpdatedRotation = FRotationMatrix::MakeFromYZ(NewRightVector, NewUpVector).ToQuat();
 
-        BoidTransform.SetLocation(BoidPosition + PropulsionForce * DeltaTime);
+        BoidTransform.SetLocation(BoidPosition + PropulsionForce * Context.GetDeltaTimeSeconds());
         BoidTransform.SetRotation(UpdatedRotation);
     }
 }

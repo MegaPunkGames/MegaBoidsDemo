@@ -76,3 +76,4 @@ Package/
 
 # Make sure to not upload the plugin itself following tests
 Plugins/MegaBoids/**
+.vsconfig

@@ -74,7 +74,7 @@ public:
     static void SetupTrait(FMegaBoidsMovementBuildContext& BuildContext, const UMegaBoidsMovementSubprocessorConfig* Config);
     static void InitializeEntity(const FMegaBoidsMovementInitializationContext& Context);
 
-    static void ApplyMovement(const FMegaBoidsMovementExecutionContext& Context, const FMegaBoidsMovementData& MovementData, const FVector& DrivingForce, const FVector& SteeringForce, const FVector& AvoidanceForce, float DeltaTime);
+    static void ApplyMovement(const FMegaBoidsMovementExecutionContext& Context, const FMegaBoidsMovementData& MovementData, const FVector& DrivingForce, const FVector& SteeringForce, const FVector& AvoidanceForce);
 };
 
 UCLASS()

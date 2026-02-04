@@ -1,44 +1,42 @@
 {
-  "FileVersion": 3,
-  "EngineAssociation": "5.1",
-  "Category": "",
-  "Description": "",
-  "Modules": [
-    {
-      "Name": "MegaBoidsDemo",
-      "Type": "Runtime",
-      "LoadingPhase": "Default"
-    }
-  ],
-  "Plugins": [
-    {
-      "Name": "StructUtils",
-      "Enabled": true
-    },
-    {
-      "Name": "MassEntity",
-      "Enabled": true
-    },
-    {
-      "Name": "MassGameplay",
-      "Enabled": true
-    },
-    {
-      "Name": "MegaBoids",
-      "Enabled": true
-    },
-    {
-      "Name": "ModelingToolsEditorMode",
-      "Enabled": true
-    }
-  ],
-  "TargetPlatforms": [
-    "WindowsNoEditor",
-    "Windows",
-    "HoloLens",
-    "Android"
-  ],
-  "AdditionalRootDirectories": [],
-  "AdditionalPluginDirectories": [],
-  "EpicSampleNameHash": ""
+	"FileVersion": 3,
+	"EngineAssociation": "5.1",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "MegaBoidsDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "StructUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "MassEntity",
+			"Enabled": true
+		},
+		{
+			"Name": "MassGameplay",
+			"Enabled": true
+		},
+		{
+			"Name": "MegaBoids",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/Fab/product/b6add01b-9244-452a-9f4b-7b8db8db2325"
+		},
+		{
+			"Name": "AnimToTexture",
+			"Enabled": true
+		}
+	],
+	"TargetPlatforms": [
+		"WindowsNoEditor",
+		"Windows",
+		"HoloLens",
+		"Android"
+	]
 }

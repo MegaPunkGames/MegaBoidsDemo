@@ -3,8 +3,8 @@
 #include "BouncingMovementSubprocessor.h"
 
 #include "MegaBoidsContext.h"
+#include "Commands/MegaBoidsUpdateShaderCustomDataCommand.h"
 #include "Fragments/MegaBoidsCommonFragments.h"
-#include "Fragments/MegaBoidsUpdateShaderCustomDataTagFragment.h"
 
 void UBouncingMovementSubprocessorDefinition::SetupQuery(FMassEntityQuery& Query)
 {
@@ -45,30 +45,30 @@ void UBouncingMovementSubprocessorDefinition::InitializeEntity(const FMegaBoidsM
     }
 }
 
-void UBouncingMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMovementExecutionContext& Context, const FMegaBoidsMovementData& MovementData, const FVector& DrivingForce, const FVector& SteeringForce, const FVector& AvoidanceForce, float DeltaTime)
+void UBouncingMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMovementExecutionContext& Context, const FMegaBoidsMovementData& MovementData, const FVector& DrivingForce, const FVector& SteeringForce, const FVector& AvoidanceForce)
 {
     const FBouncingMovementSharedFragment& BounceSharedFragment = Context.GetConstSharedFragment<FBouncingMovementSharedFragment>();
     FBouncingMovementFragment& BounceFragment = Context.GetMutableFragment<FBouncingMovementFragment>();
 
     if (BounceFragment.ImpulseDelay > 0)
     {
-        BounceFragment.ImpulseDelay -= DeltaTime;
+        BounceFragment.ImpulseDelay -= Context.GetDeltaTimeSeconds();
     }
     else
     {
         double currentBounceVelocity = BounceFragment.VerticalVelocity;
 
         // Apply gravity acceleration
-        BounceFragment.VerticalVelocity -= BounceSharedFragment.Gravity * DeltaTime;
+        BounceFragment.VerticalVelocity -= BounceSharedFragment.Gravity * Context.GetDeltaTimeSeconds();
 
         // Everything else is just kinetic movement.
         const FVector AccelerationForce = DrivingForce + SteeringForce + AvoidanceForce; // Fixed mass for the sake of the demo
-        FVector UpdateVelocity = MovementData.GetVelocity() + AccelerationForce * DeltaTime;
+        FVector UpdateVelocity = MovementData.GetVelocity() + AccelerationForce * Context.GetDeltaTimeSeconds();
         UpdateVelocity.Z = currentBounceVelocity;
 
         FTransform& BoidTransform = MovementData.GetMutableTransform();
         FVector BoidPosition = BoidTransform.GetLocation();
-        BoidPosition += UpdateVelocity * DeltaTime;
+        BoidPosition += UpdateVelocity * Context.GetDeltaTimeSeconds();
 
         // For the sake of the demo, we assume a flat ground. Therefore, our entity hits the ground when velocity is under the impulse strength.
         if (BounceFragment.VerticalVelocity <= -BounceSharedFragment.BounceStrength)
@@ -83,10 +83,7 @@ void UBouncingMovementSubprocessorDefinition::ApplyMovement(const FMegaBoidsMove
             FBouncingAnimationFragment& AnimFragment = Context.GetMutableFragment<FBouncingAnimationFragment>();
             AnimFragment.AnimStartTime = Context.GetWorld()->GetTimeSeconds();
 
-            if (!Context.HasTag<FMegaBoidsUpdateShaderCustomDataTagFragment>())
-            {
-                Context.Defer().AddTag<FMegaBoidsUpdateShaderCustomDataTagFragment>(Context.GetEntity());
-            }
+            Context.Defer().PushCommand<FMegaBoidsUpdateShaderCustomDataCommand>(Context.GetEntity());
         }
 
         BoidTransform.SetLocation(BoidPosition);
