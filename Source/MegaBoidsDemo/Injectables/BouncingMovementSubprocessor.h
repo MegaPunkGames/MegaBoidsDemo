@@ -31,7 +31,7 @@ public:
 };
 
 USTRUCT()
-struct FBouncingMovementSharedFragment : public FMegaCompatConstSharedFragment
+struct FBouncingMovementSharedFragment : public FMegaCompatMassConstSharedFragment
 {
 public:
     GENERATED_BODY()
