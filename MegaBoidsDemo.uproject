@@ -27,10 +27,6 @@
 			"Name": "MegaBoids",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/Fab/product/b6add01b-9244-452a-9f4b-7b8db8db2325"
-		},
-		{
-			"Name": "AnimToTexture",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
