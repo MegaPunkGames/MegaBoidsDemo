@@ -18,6 +18,8 @@ Be sure to check out the [documentation](https://megapunkgames.com/MegaBoids/) f
 # About
 MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich behavior. Built upon the common boid algorithm with alignment, cohesion and separation, MegaBoids makes it easy to create atmosphere within your environment by adding thousands of entities with small CPU and GPU overhead. Whether it's flocks of birds, swarms of insects, schools of fish or your custom groups of aliens, this plugin has it covered with it's extensive feature set and support for custom behavior injection.
 
+*We highly reccomend using Unreal Engine version 5.6 and above. Previous versions of MassEntity are plagued with bugs and although we "support" them, there are issues with most of them or they are unreliable (i.e. working only in certain levels for an unknown reason). It is likely we will drop support for those versions in the future.*
+
 # Features
 - $\color{green}{Mass~Entity}$: Based on Mass Entity for maximum performance.
 - $\color{green}{Multi~threaded}$: Fully multi threaded to make the most use of those CPU cores and limit the impact on the game thread.
@@ -55,6 +57,12 @@ MegaBoids in a Mass Entity plugin to create groups of ambient NPCs with rich beh
  - Added project settings
  - Added default boid config space partition
  - Added per spawner & spawn config space partition override
+## Version 0.4.0
+ - Allow respawning into existing group
+ - Chaos physics integration allowing traces and collision
+ - Improved Blueprint API on Spawner and new Subsystem
+ - Added max delta time setting in project settings
+ - Added "Is instant" to impulse forces to make it a velocity change vs. an acceleration
 
 # Installation
 - Purchase and download the plugin from [Fab](https://www.fab.com/listings/b6add01b-9244-452a-9f4b-7b8db8db2325)
